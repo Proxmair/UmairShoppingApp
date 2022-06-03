@@ -1,0 +1,114 @@
+
+.contact-heading{
+    margin: 2rem 30vw;
+    width: 40vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    padding: 2vmax;
+    color: rgba(0, 0, 0, 0.678);
+    font: 500 1.5rem "Roboto";
+    text-align: center;
+}
+
+.contact-container{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    margin: 0 10vw;
+}
+.contact-options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact-option{
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+    background-color: rgb(237, 241, 245);
+    border-radius: 1rem;
+    box-shadow:rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    color: gray;
+}
+.contact-option>h4{
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+.contact-option>h5{
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+.contact-option:hover{
+    transform: translateY(-1rem);
+}
+.contact-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+.contact-option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.6rem;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.contact-container>form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 241, 245);
+    border-radius: 1rem;
+    box-shadow:rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 1rem;
+}
+.contact-container>form>input,.contact-container>form>textarea{
+    width: 80%;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    background: transparent;
+    border: 1px solid gray;
+    resize: none;
+    color: black;
+    border-radius: 1.2rem;
+    outline: none;
+}
+.contact-button{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.contact-button>button{
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(25,118,210);
+    color: wheat;
+}
+.contact-button>button:hover{
+    background-color: rgba(25, 118, 210, 0.692);
+}
+.contact-button>button>p{
+    margin-right: 0.4rem;
+}
+.contact-button>button>svg{
+    width: 1.2rem;
+}
+/*==================== Media Queries ====================*/
+ @media screen and (max-width:1024px){
+ .contact-container{
+     grid-template-columns: 1fr;
+     gap: 2rem;
+ }
+}
+@media screen and (max-width:600px){
+    .contact-container{
+        width: var(--container-width-sm);        
+    }
+}  

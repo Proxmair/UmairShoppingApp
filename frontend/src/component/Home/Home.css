@@ -1,0 +1,101 @@
+
+ .home-product-container{
+   margin-top: 3rem;
+ }
+ .home-product-heading{
+  margin: 2vmax 40vw;
+  width: 20vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.9vmax "Roboto";
+  text-align: center;
+ }
+ 
+ .home-product{
+   width: 90vw;
+   background-color: rgb(237, 241, 245);
+   box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+   border-radius:1rem;
+   margin: 0rem 5vw 10rem 5vw;
+   padding: 3rem 2rem;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+ }
+.product-card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  background-color: white;
+  transition: all 0.5s;
+  padding: 0.5rem;
+  margin: 3%;
+  border-radius: 1rem;
+}
+.product-card > img {
+  width: 100%;
+  aspect-ratio: 2/1.5;
+}
+.product-card > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product-card-span {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+.product-card > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+.product-card > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+.product-card:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+}
+.coursel-container{
+  margin-top: 3rem !important;
+  width: 40rem;
+  aspect-ratio: 2/1.15;
+  margin: auto;
+}
+.carousel .slider-wrapper{
+  border-radius: 1rem ;
+}
+.carousel img{
+  border-radius: 0.3rem;
+}
+.carousel .thumb,.carousel .thumb.selected{
+  border-radius:0.5rem;
+}
+ @media screen and (max-width: 800px){
+   .product-card {
+    width: 40%;
+  }
+  .coursel-container{
+    width: 30rem;
+    overflow: hidden;
+  }
+
+ }
+ @media screen and (max-width: 600px){
+   .product-card {
+    width: 60%;
+  }
+  .coursel-container{
+    margin-top: 5rem;
+    width: 20rem;
+  }
+}
